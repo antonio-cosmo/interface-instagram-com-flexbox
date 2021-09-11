@@ -1,7 +1,19 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+
 body{
     width: 100%;
     min-height: 100vh;
-    background-color: rgb(250,250, 250);
+    background-color: rgb(243,243, 243);
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
 }
@@ -13,15 +25,14 @@ body{
     height: 100vh;
 
 }
-.fhone-container{
+.phone-container{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 50%;
 }
 
-.fhone-container img{
-     /* width: 100%;*/
+.phone-container img{
     height: 50rem;
 }
 
@@ -63,4 +74,87 @@ body{
 }
 .profile-photo img{
     height: 6rem ;
+}
+
+.login{
+    text-decoration: none;
+    background-color: rgb(46, 148, 243);
+    color: white;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.logout{
+    text-decoration: none;
+    color: rgb(46, 148, 243);
+    margin-top: 1rem;
+}
+
+.not-account{
+    color: rgb(166, 160, 160);
+}
+
+.link-blue{
+    color: rgb(46, 148, 243);
+}
+
+.get-app{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+
+.download{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+
+}
+
+
+.app-download{
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+}
+
+.app-download:nth-child(1){
+    background-image: url('../img/apple-button.png');
+}
+.app-download:nth-child(2){
+    background-image: url('../img/googleplay-button.png');
+}
+
+
+@media (max-width: 1024px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px) {
+    body {
+        background-color: #ffffff;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .phone-container {
+        display: none;
+    }
+
+    .continue-container {
+        width: 100%;
+    }
+    
+    .group {
+        border: 1px solid transparent;
+    }
 }
