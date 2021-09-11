@@ -6,8 +6,6 @@
     font-family: sans-serif;
     font-size: 14px;
 }
-
-
 body{
     width: 100%;
     min-height: 100vh;
@@ -17,32 +15,38 @@ body{
     display: flex;
     justify-content: center;
 }
-.container{
+
+.container-instagram{
     display: flex;
     justify-content:flex-start;
     align-items: center;
     width: 60%;
     height: 100vh;
-
 }
-.phone-container{
+
+.container-phone{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 50%;
 }
 
-.phone-container img{
+.container-phone img{
     height: 50rem;
 }
 
-.continue-container{
+.container-login{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
     width: 50%;
     min-height: 34rem;
+}
+
+.logo-instagram{
+    height: 3rem;
+    margin-bottom: 20px;
 }
 
 .group{
@@ -52,50 +56,97 @@ body{
     align-items: center;
     background-color: rgb(255, 255, 255);
     width: 100%;
+   margin-bottom: 10px;
     padding: 1.3rem 0;
     border: 1px solid lightgray;
-
-}
-.group:nth-child(1){
-    min-height: 19rem;
 }
 
-.logo-instagram{
-    height: 3rem;
-}
-
-.profile-photo{
+form{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    border-radius: 50%;
-    overflow: hidden;
-
-}
-.profile-photo img{
-    height: 6rem ;
+    width: 100%;
 }
 
-.login{
-    text-decoration: none;
-    background-color: rgb(46, 148, 243);
-    color: white;
-    padding: 8px;
+.input-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.input-information{
+    margin-bottom: 20px;
+    width: 70%;
+    height: 3em;
+    border: 1px solid lightgray;
     border-radius: 4px;
 }
 
-.logout{
-    text-decoration: none;
-    color: rgb(46, 148, 243);
-    margin-top: 1rem;
+.button-enter{
+    margin-bottom: 20px;
+    width: 70%;
+    height: 2.5em;
+    font-weight: bold;
+    background-color: #85cbfa;
+    color: white;
+    border: 1px solid #85cbfa;
+    border-radius: 4px;
 }
 
-.not-account{
-    color: rgb(166, 160, 160);
+.enter-with{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    align-items: center;
+}
+
+.or{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.line{
+    height: 2px;
+    background-color:lightgray;
+    flex-grow: 2;
+}
+
+.text-or{
+    text-align: center;
+    color:gray ;
+    flex-grow: 1;
+}
+
+.enter-facebook{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    
+}
+
+.enter-facebook img{
+    margin-right: 10px;
+}
+
+.enter-facebook a{
+    color: #374d87;
+   
+    font-weight:bold
+}
+
+.forgot-password{
+    color: #374d87;
 }
 
 .link-blue{
-    color: rgb(46, 148, 243);
+    color: #38c8ff;
+    font-weight: bold;
 }
 
 .get-app{
@@ -116,7 +167,6 @@ body{
 
 }
 
-
 .app-download{
     height: 3rem;
     width: 10rem;
@@ -131,8 +181,9 @@ body{
 }
 
 
+
 @media (max-width: 1024px) {
-    .container {
+    .container-instagram {
         width: 90%;
     }
 }
@@ -142,15 +193,15 @@ body{
         background-color: #ffffff;
     }
 
-    .container {
+    .container-instagram {
         width: 90%;
     }
 
-    .phone-container {
+    .container-phone{
         display: none;
     }
 
-    .continue-container {
+    .container-login {
         width: 100%;
     }
     
