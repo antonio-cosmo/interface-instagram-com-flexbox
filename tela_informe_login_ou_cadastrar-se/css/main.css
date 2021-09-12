@@ -10,8 +10,6 @@ body{
     width: 100%;
     min-height: 100vh;
     background-color: rgb(243,243, 243);
-    margin: 0;
-    padding: 0;
     display: flex;
     justify-content: center;
 }
@@ -20,7 +18,7 @@ body{
     display: flex;
     justify-content:flex-start;
     align-items: center;
-    width: 60%;
+    width: 650px;
     height: 100vh;
 }
 
@@ -182,11 +180,6 @@ form{
 
 
 
-@media (max-width: 1024px) {
-    .container-instagram {
-        width: 90%;
-    }
-}
 
 @media (max-width: 650px) {
     body {
@@ -194,7 +187,7 @@ form{
     }
 
     .container-instagram {
-        width: 90%;
+        width: 60%;
     }
 
     .container-phone{
@@ -202,10 +195,8 @@ form{
     }
 
     .container-login {
-        width: 100%;
+        min-width: 90%;
     }
     
-    .group {
-        border: 1px solid transparent;
-    }
+    
 }
