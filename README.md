@@ -1,8 +1,10 @@
 # Projeto da aula de Flexbox
 
-## Interfaces iniciais do Instagram
+## Interfaces de login do Instagram
 
-Foram criadas as duas interfaces iniciais de login do instagram 
 
- - tela inicia de logar-se com o usuario salvo;
- - tela inicial onde se pede usuario e senha para logar;
+ - ### Tela de login com o usuario salvo:
+ ![ScreenShot](https://github.com/antonio-cosmo/interface-instagram-com-flexbox/blob/main/screenshot/continuar-logado.png)
+ 
+ - ### Tela de login com usuario e senha:
+ ![ScreenShot](https://github.com/antonio-cosmo/interface-instagram-com-flexbox/blob/main/screenshot/logar-se.png)
